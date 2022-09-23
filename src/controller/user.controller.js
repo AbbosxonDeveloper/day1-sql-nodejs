@@ -24,7 +24,7 @@ const UPDATE = async(req, res) => {
     try {
         let user = await model.UPDATEUSER(req.body)
         console.log(req.body);
-        res.status(200).send(user)
+        res.status(200).send('changed')
     } catch (error) {
         console.log(error);
     }

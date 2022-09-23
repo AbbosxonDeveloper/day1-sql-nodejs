@@ -1,11 +1,8 @@
 import pg from 'pg'
+import { config } from './config.js'
+console.log(config);
 
-const pool = new pg.Pool({
-    host: 'tiny.db.elephantsql.com',
-    user: 'xlnbqnvc',
-    database: 'xlnbqnvc',
-    password: 'RlE5OMpfQbqYrlpUEpscYJJEpfZv_81N'
-})
+const pool = new pg.Pool(config)
 
 
 
